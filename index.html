@@ -101,8 +101,9 @@
                     // html +='<hr>';
                     // html +='<h2 style="text-align: center;">Details</h2>';
                     // html +='<hr>';
-                   var html = 'District: <b>' + feature.properties.ADM2_EN + '</b><br/>';
-                    html += 'জেলা: <b>' + feature.properties.ADM2_BN + '</b><br/>';
+                    var html += '<h3>' + feature.properties.ADM2_BN + '</h3><br/>';
+                        html = 'District: <b>' + feature.properties.ADM2_EN + '</b><br/>';
+                    // html += 'জেলা: <b>' + feature.properties.ADM2_BN + '</b><br/>';
                     html += feature.properties.ADM2_BN + '<b><a href=' + feature.properties.Link + '> জেলার ভ্রমনের স্থান সমূহ.</a></b><br/>';
                     // html += 'Ward: <b>' + feature.properties.Ward + '</b><br/>';
                     // html += 'Community: <b>' + feature.properties.Community + '</b><br/>';
