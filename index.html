@@ -79,6 +79,8 @@
         
         L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
             opacity: 1.0,
+            maxZoom: 9,
+            minZoom: 6,
             attribution: 'Map data &copy; ' +'Builder &copy; <a href="https://arahmandc.github.io/" target="_blank">Atikur Rahman</a>, '+
             'Imagery © <a href="https://www.google.com/maps/" target="_blank">Google Hyderabad</a>',
         }).addTo(map);
@@ -93,8 +95,8 @@
             var markers = L.markerClusterGroup();
 
             // The polygons are styled slightly differently on mouse hovers
-    var polygonStyle = { color: "#f78c72", fillColor: "#f78c72" , weight: 1.5, fillOpacity: 1};
-    var polygonHoverStyle = { color: "#f5eb5d", fillColor: "#f7ea2f", weight: 1.5, fillOpacity: 1};
+            var polygonStyle = { color: "#f78c72", fillColor: "#f78c72" , weight: 1.5, fillOpacity: 1};
+            var polygonHoverStyle = { color: "#f5eb5d", fillColor: "#f7ea2f", weight: 1.5, fillOpacity: 1};
 
             var layer = L.geoJson(geojson, {
                 onEachFeature: function(feature, layer) {
