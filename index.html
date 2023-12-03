@@ -83,7 +83,7 @@
             'Imagery © <a href="https://www.google.com/maps/" target="_blank">Google Hyderabad</a>',
         }).addTo(map);
         
-        $.get('bd_geojson.geojson', function (data) {
+        $.get('bd_01.geojson', function (data) {
             var geojson = null;
             if (typeof data === 'string') {
                 geojson = JSON.parse(data)
